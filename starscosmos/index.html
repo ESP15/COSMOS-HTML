@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Maravilloso Cosmos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', sans-serif;
+            color: #fff;
+            background-color: #000;
+        }
+
+        .container {
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(180deg, #000 0%, #0d0d0d 50%, #000 100%);
+        }
+
+        .header {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .header h1 {
+            font-size: 4em;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            background: -webkit-linear-gradient(#ffffff, #ff9d00);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .header p {
+            font-size: 1.5em;
+            margin: 10px 0 0;
+            color: #b3b3b3;
+        }
+
+        .sections {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .section {
+            width: 300px;
+            margin: 20px;
+            padding: 20px;
+            background: #1a1a1a;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s;
+        }
+
+        .section:hover {
+            transform: scale(1.05);
+        }
+
+        .section h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            background: -webkit-linear-gradient(#ff9d00, #ffffff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .section p {
+            font-size: 1em;
+            color: #d9d9d9;
+        }
+
+        .galaxy {
+            background: url('https://source.unsplash.com/random/600x400?space') no-repeat center center/cover;
+            height: 200px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            position: relative;
+        }
+
+        .star {
+            width: 3px;
+            height: 3px;
+            background: #fff;
+            border-radius: 50%;
+            position: absolute;
+            animation: twinkle 2s infinite ease-in-out;
+        }
+
+        .star:nth-child(2) {
+            left: 30%;
+            top: 40%;
+            animation-duration: 3s;
+        }
+
+        .star:nth-child(3) {
+            left: 70%;
+            top: 20%;
+            animation-duration: 4s;
+        }
+
+        .star:nth-child(4) {
+            left: 50%;
+            top: 80%;
+            animation-duration: 1.5s;
+        }
+
+        @keyframes twinkle {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.5;
+            }
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: #111;
+            color: #b3b3b3;
+        }
+
+        .footer a {
+            color: #ff9d00;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>El Maravilloso Cosmos</h1>
+            <p>Un viaje a través del universo</p>
+        </header>
+
+        <div class="sections">
+            <div class="section">
+                <div class="galaxy">
+                    <div class="star"></div>
+                    <div class="star"></div>
+                    <div class="star"></div>
+                    <div class="star"></div>
+                </div>
+                <h2>Galaxias</h2>
+                <p>Las galaxias son enormes sistemas de estrellas, gas, polvo y materia oscura, unidos por la gravedad.</p>
+            </div>
+            <div class="section">
+                <div class="galaxy">
+                    <div class="star"></div>
+                    <div class="star"></div>
+                    <div class="star"></div>
+                    <div class="star"></div>
+                </div>
+                <h2>Estrellas</h2>
+                <p>Las estrellas son esferas de plasma que emiten luz y calor. El Sol es la estrella más cercana a la Tierra.</p>
+            </div>
+            <div class="section">
+                <div class="galaxy">
+                    <div class="star"></div>
+                    <div class="star"></div>
+                    <div class="star"></div>
+                    <div class="star"></div>
+                </div>
+                <h2>Planetas</h2>
+                <p>Los planetas son cuerpos celestes que orbitan una estrella. La Tierra es el tercer planeta del Sistema Solar.</p>
+            </div>
+            <div class="section">
+                <div class="galaxy">
+                    <div class="star"></div>
+                    <div class="star"></div>
+                    <div class="star"></div>
+                    <div class="star"></div>
+                </div>
+                <h2>Nebulosas</h2>
+                <p>Las nebulosas son nubes gigantes de gas y polvo en el espacio, donde nacen nuevas estrellas.</p>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>&copy; 2024 El Maravilloso Cosmos. Todos los derechos reservados. Escrito por Eric Sanz 2024 | <a href="#">Contacto</a></p>
+        </footer>
+    </div>
+</body>
+</html>
